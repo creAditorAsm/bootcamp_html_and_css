@@ -13,6 +13,110 @@
     <link rel="stylesheet" href="./stylesheet/common.css" />
     <link rel="stylesheet" href="./stylesheet/article.css" />
   </head>
+  
   <body>
+  <!-- ヘッダー開始 -->
+  <header class="header">
+
+    <div class="logo">
+      <a href="./top.html">
+        <img class="logo__image" src="images/logo.svg" alt="">
+      </a>
+    </div>   
+
+    <!-- ハンバーガー -->
+    <div class="hamburger">
+      <span class="hamburger__line"></span>
+    </div>
+
+    <!-- ナビ部分 -->
+    <nav class="global-nav">
+      <ul class="global-nav__list">
+        <li class="global-nav__item global-nav__item--current">
+          <a href="./top.html">top</a>
+        </li>
+        <li class="global-nav__item">
+          <a href="#">article</a>
+        </li>
+        <li class="global-nav__item">
+          <a href="#">member</a>
+        </li>
+        <li class="global-nav__item">
+          <a href="#">contact</a>
+        </li>
+      </ul>
+    </nav> 
+
+  </header> 
+  <!-- ヘッダー終わり -->
+
+  <!-- メイン記事部分 -->
+  <main>
+
+    <article class="article">
+
+      <!-- 記事ヘッダー -->
+      <div class="article_inner">
+        <div class="artile__header">
+          <h1 class="article__title">Let's master CSS flexboxes!</h1>
+
+          <div class="article__image">
+            <img src="./images/article_thumbnail.png" alt="edit html on monitor">
+          </div>
+          <ul class="article__info">
+            <div class="article__info-item">Taro Tanaka</div>
+            <div class="article__info-item">2023/03/20</div>
+          </ul>
+        </div>
+
+      <!-- 記事本文 -->
+      <div class="article__body">
+        <section class="section">
+          <h2 class="section__title">What is a Flex box?</h2>
+          <p class="section__text">
+            Hello, this is Tanaka from Progate My name is Tanaka from Path.
+            In this article, I'd like to introduce a more advanced use of
+            flexbox. CSS Flexbox (Flexible Box LayoutModule) is a layout
+            model for efficiently arranging, aligning, and distributing
+            items within a container. Flex boxes are controlled by
+            properties applied to the parent element (flex container) and
+            child elements (flex items). This allows items of variable width
+            and height to be easily adjusted to achieve responsive design
+            for a variety of devices and screen sizes.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2 class="section__title">display: flex;</h2>
+          <p class="section__text">
+            To use a flexbox, first add a parent element with display:.
+            flex; or display: inline-flex; to the parent element.
+            inline-flex; to the parent element. This makes the element a
+            flex container and the child elements flex items.
+          </p>
+        </section>
+      </div>
+      </div>
+    </article>
+  </main>
+  <!-- メイン終わり -->
+
+  <!-- フッター部分 -->
+  <footer class="footer">
+    <ul class="site-nav">
+      <li class="site-nav__item">
+        <a href="#">site polisy</a>
+      </li>
+      <li class="site-nav__item">
+        <a href="#">privacy policy</a>
+      </li>
+      <li class="site-nav__item">
+        <a href="#">site map</a>
+      </li>
+    </ul>
+
+    <div class="copyright">© 2023 creAditor</div>
+  </footer>
+
   </body>
 </html>
